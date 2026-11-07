@@ -1,0 +1,155 @@
+/* Styles for "¿Quién Controla a Quién? - El Festival de la Desconexión" */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Bungee&display=swap');
+
+:root {
+  --neon-yellow: #ffee00;
+  --neon-orange: #ff7700;
+  --neon-purple: #9d4edd;
+  --neon-violet: #5a189a;
+  --neon-pink: #f72585;
+  --neon-cyan: #00f0ff;
+  --bg-dark: #090314;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.font-funky {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+}
+
+.font-bungee {
+  font-family: 'Bungee', cursive, sans-serif;
+}
+
+/* Neon Glows */
+.text-glow-yellow {
+  text-shadow: 0 0 10px rgba(255, 238, 0, 0.7),
+               0 0 20px rgba(255, 238, 0, 0.5),
+               0 0 35px rgba(255, 170, 0, 0.4),
+               0 4px 0 #8c4300;
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.8),
+               0 0 25px rgba(0, 240, 255, 0.5);
+}
+
+.box-glow-phone {
+  box-shadow: 0 0 30px rgba(247, 37, 133, 0.45),
+              0 0 60px rgba(157, 78, 221, 0.3),
+              inset 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.box-glow-btn {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.6),
+              0 0 40px rgba(0, 240, 255, 0.2);
+}
+
+.box-glow-btn:hover {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.9),
+              0 0 50px rgba(0, 240, 255, 0.4);
+}
+
+/* Cosmic background canvas */
+.cosmic-bg {
+  background: radial-gradient(circle at 50% 20%, #2b0b4d 0%, #150628 50%, #07010f 100%);
+}
+
+/* Floating animation */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 4.5s ease-in-out 1.5s infinite;
+}
+
+/* Wave lines effect */
+@keyframes waveMotion {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}
+
+/* Phone screen pulse border */
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: #f72585;
+    box-shadow: 0 0 25px rgba(247, 37, 133, 0.6), inset 0 0 15px rgba(247, 37, 133, 0.3);
+  }
+  50% {
+    border-color: #ffee00;
+    box-shadow: 0 0 35px rgba(255, 238, 0, 0.6), inset 0 0 20px rgba(255, 238, 0, 0.3);
+  }
+}
+
+.phone-border-anim {
+  animation: borderPulse 4s infinite ease-in-out;
+}
+
+/* Animated speech bubble badge */
+@keyframes popBubble {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.92);
+    opacity: 0.9;
+  }
+}
+
+.animate-bubble-pulse {
+  animation: popBubble 3s ease-in-out infinite;
+}
+
+/* Sparkle twinkle */
+@keyframes sparkleTwinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(45deg);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkleTwinkle 2s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090314;
+}
+::-webkit-scrollbar-thumb {
+  background: #9d4edd;
+  border-radius: 4px;
+}
+
