@@ -21,7 +21,8 @@ import {
   Award,
   Heart,
   Volume2,
-  MessageSquare
+  MessageSquare,
+  Bell
 } from "lucide-react";
 
 import { ParticleBackground } from "../components/ParticleBackground";
@@ -32,9 +33,12 @@ import { RegistrationModal } from "../components/RegistrationModal";
 import { FlyerModal } from "../components/FlyerModal";
 import { InteractiveTest } from "../components/InteractiveTest";
 import { SurpriseWheel } from "../components/SurpriseWheel";
+import { InstitutionalLogos } from "../components/InstitutionalLogos";
+import { NotificationIntro } from "../components/NotificationIntro";
 import "../../styles/Presentation.css";
 
 export function PanelPrincipal() {
+  const [showIntro, setShowIntro] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlay, setIsAutoPlay] = useState(false);
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
@@ -102,22 +106,10 @@ export function PanelPrincipal() {
       <ParticleBackground />
 
       {/* TOP INSTITUTIONAL BAR */}
-      <header className="relative z-30 w-full border-b border-purple-500/20 bg-[#0d031c]/80 backdrop-blur-md px-3 sm:px-6 py-2.5 flex items-center justify-between">
-        {/* Institutional Logos & Titles */}
-        <div className="flex items-center gap-2 sm:gap-3">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-yellow-400 via-pink-500 to-purple-600 p-0.5 shadow-md flex-shrink-0">
-            <div className="w-full h-full bg-[#0d031c] rounded-[10px] flex items-center justify-center font-black text-yellow-300 text-xs sm:text-sm">
-              UNSM
-            </div>
-          </div>
-          <div>
-            <h1 className="text-[11px] sm:text-xs font-black tracking-wider uppercase text-yellow-300 leading-tight">
-              UNIVERSIDAD NACIONAL DE SAN MARTÍN
-            </h1>
-            <p className="text-[9px] sm:text-[10px] text-purple-200/80 font-medium">
-              Facultad de Medicina Humana • Escuela Profesional de Enfermería
-            </p>
-          </div>
+      <header className="relative z-30 w-full border-b border-purple-500/20 bg-[#0d031c]/85 backdrop-blur-md px-3 sm:px-6 py-2 flex items-center justify-between">
+        {/* Institutional Logos: UNSM, FMH, EPF */}
+        <div className="flex items-center">
+          <InstitutionalLogos variant="header" />
         </div>
 
         {/* Action Controls & Music */}
@@ -133,6 +125,16 @@ export function PanelPrincipal() {
           >
             <FileText className="w-3.5 h-3.5 text-yellow-400" />
             <span>Afiche</span>
+          </button>
+
+          {/* Re-trigger Notification Intro */}
+          <button
+            onClick={() => setShowIntro(true)}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-pink-900/40 hover:bg-pink-800/60 border border-pink-500/40 text-pink-200 text-xs font-semibold transition-all hover:scale-105"
+            title="Repetir notificación de entrada"
+          >
+            <Bell className="w-3.5 h-3.5 text-pink-400 animate-pulse" />
+            <span>Notificación</span>
           </button>
 
           {/* Fullscreen Toggle */}
@@ -185,9 +187,9 @@ export function PanelPrincipal() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-fade-in">
             {/* Left Content / Titles */}
             <div className="lg:col-span-7 text-center lg:text-left space-y-4 sm:space-y-5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-300 text-xs font-bold tracking-wide">
-                <Sparkles className="w-3.5 h-3.5 text-yellow-300 animate-spin" style={{ animationDuration: '4s' }} />
-                <span>UNIVERSIDAD NACIONAL DE SAN MARTÍN • 2026 - II</span>
+              {/* Institutional 3 Logos Banner (UNSM - FMH - EPF) */}
+              <div className="flex justify-center lg:justify-start">
+                <InstitutionalLogos variant="banner" />
               </div>
 
               {/* Main Headline */}
@@ -519,9 +521,16 @@ export function PanelPrincipal() {
             <div className="bg-gradient-to-br from-indigo-950/90 via-[#180630] to-purple-950/90 border-2 border-yellow-400/50 rounded-3xl p-6 sm:p-8 shadow-[0_0_40px_rgba(255,238,0,0.25)] text-left space-y-5">
               <div className="flex flex-wrap items-center justify-between gap-3 border-b border-purple-500/30 pb-4">
                 <div>
-                  <span className="text-xs uppercase font-extrabold text-yellow-300 tracking-wider">
-                    UNIVERSIDAD NACIONAL DE SAN MARTÍN
-                  </span>
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="flex items-center gap-1.5 bg-black/50 px-2.5 py-1 rounded-xl border border-white/10 shadow-sm">
+                      <img src="/logos/unsm_badge.png" alt="UNSM" className="w-5 h-5 object-contain" title="Universidad Nacional de San Martín" />
+                      <img src="/logos/fmh_badge.png" alt="FMH" className="w-5 h-5 object-contain" title="Facultad de Medicina Humana" />
+                      <img src="/logos/epf_badge.png" alt="EPF" className="w-5 h-5 object-contain" title="Escuela Profesional de Enfermería" />
+                    </div>
+                    <span className="text-xs uppercase font-extrabold text-yellow-300 tracking-wider">
+                      UNSM • FMH • EPF
+                    </span>
+                  </div>
                   <h3 className="text-xl sm:text-2xl font-black text-white font-funky">
                     ¿Quién Controla a Quién?
                   </h3>
@@ -644,6 +653,10 @@ export function PanelPrincipal() {
       </footer>
 
       {/* MODALS */}
+      {showIntro && (
+        <NotificationIntro onOpenInvitation={() => setShowIntro(false)} />
+      )}
+
       <RegistrationModal
         isOpen={isRegisterOpen}
         onClose={() => setIsRegisterOpen(false)}

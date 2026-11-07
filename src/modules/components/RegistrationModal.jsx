@@ -5,7 +5,7 @@ import { X, CheckCircle, Ticket, Sparkles, MapPin, Calendar, Clock, QrCode, Shar
 
 export function RegistrationModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
-    name: "Alessandra",
+    name: "",
     career: "",
     phone: "",
     expectation: "",
@@ -112,7 +112,7 @@ export function RegistrationModal({ isOpen, onClose }) {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="Ej. 987 654 321"
+                    placeholder="Ej. 123 456 789"
                     className="w-full px-4 py-2.5 rounded-xl bg-purple-950/60 border border-purple-500/40 text-white placeholder-purple-400/50 focus:outline-none focus:border-cyan-400 text-sm"
                   />
                 </div>
@@ -167,9 +167,16 @@ export function RegistrationModal({ isOpen, onClose }) {
               <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-[#140526] rounded-full border-l-2 border-yellow-400/60" />
 
               <div className="border-b border-dashed border-yellow-400/40 pb-3 mb-3">
-                <span className="text-[10px] uppercase font-bold text-yellow-300 tracking-wider">
-                  UNSM • Medicina & Enfermería
-                </span>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <div className="flex items-center gap-1.5 bg-black/40 px-2 py-0.5 rounded-lg border border-white/10">
+                    <img src="/logos/unsm_badge.png" alt="UNSM" className="w-5 h-5 object-contain" title="UNSM" />
+                    <img src="/logos/fmh_badge.png" alt="FMH" className="w-5 h-5 object-contain" title="Facultad de Medicina Humana" />
+                    <img src="/logos/epf_badge.png" alt="EPF" className="w-5 h-5 object-contain" title="Escuela Profesional de Enfermería" />
+                  </div>
+                  <span className="text-[10px] uppercase font-bold text-yellow-300 tracking-wider">
+                    UNSM • FMH • EPF
+                  </span>
+                </div>
                 <h3 className="text-lg font-black text-white font-funky leading-tight">
                   Festival de la Desconexión
                 </h3>
@@ -184,8 +191,8 @@ export function RegistrationModal({ isOpen, onClose }) {
                   <span className="font-bold text-white text-sm">{ticketGenerated.name}</span>
                 </div>
                 <div>
-                  <span className="text-[10px] text-gray-400 block">CÓDIGO PASE:</span>
-                  <span className="font-mono font-bold text-cyan-300">{ticketGenerated.code}</span>
+                  <span className="text-[10px] text-gray-400 block">WHATSAPP:</span>
+                  <span className="font-mono font-bold text-cyan-300">{ticketGenerated.phone || "Confirmado"}</span>
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-400 block">LUGAR & AULA:</span>
