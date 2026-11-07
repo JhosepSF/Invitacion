@@ -5,7 +5,7 @@ import { X, CheckCircle, Ticket, Sparkles, MapPin, Calendar, Clock, QrCode, Shar
 
 export function RegistrationModal({ isOpen, onClose }) {
   const [formData, setFormData] = useState({
-    name: "",
+    name: "Alessandra",
     career: "",
     phone: "",
     expectation: "",
@@ -86,7 +86,7 @@ export function RegistrationModal({ isOpen, onClose }) {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Ej. Jhosep Silva"
+                  placeholder="Ej. Alessandra"
                   className="w-full px-4 py-2.5 rounded-xl bg-purple-950/60 border border-purple-500/40 text-white placeholder-purple-400/50 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all text-sm"
                 />
               </div>
