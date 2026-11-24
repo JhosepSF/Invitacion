@@ -60,7 +60,7 @@ export function InteractiveFlyerPhone({ onOpenRegister, onShowFlyer }) {
         <div className="relative rounded-[32px] overflow-hidden bg-gradient-to-b from-[#260a45] via-[#180430] to-[#0c021a] border border-fuchsia-500/30 pt-7 pb-4 px-3 sm:px-4 text-center">
           {/* Top Screen Bar */}
           <div className="flex items-center justify-between text-[10px] text-purple-200/70 mb-2 px-1">
-            <span>6:00 PM</span>
+            <span>8:00 AM</span>
             <div className="flex items-center gap-1.5">
               <span>UNSM 5G</span>
               <span>🔋 100%</span>
@@ -78,7 +78,7 @@ export function InteractiveFlyerPhone({ onOpenRegister, onShowFlyer }) {
 
             {/* Quick Badge overlay */}
             <div className="absolute top-2 left-2 bg-yellow-400 text-slate-950 font-black text-[10px] px-2 py-0.5 rounded-full shadow-md">
-              30 NOV • 6 PM
+              1 DIC • 8 AM
             </div>
 
             <button
@@ -115,7 +115,7 @@ export function InteractiveFlyerPhone({ onOpenRegister, onShowFlyer }) {
             </div>
             <div className="flex items-center justify-between">
               <span className="text-gray-400">Fecha & Hora:</span>
-              <span className="font-bold text-cyan-300">1 Dic • 6:00 PM</span>
+              <span className="font-bold text-cyan-300">1 Dic • 8:00 AM</span>
             </div>
           </div>
 

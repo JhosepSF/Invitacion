@@ -143,7 +143,7 @@ export function InteractiveTest({ onConfirmClick }) {
               Ven a compartir dinámicas vivenciales, juegos sin celulares y sorpresas organizadas por la UNSM.
             </p>
             <p className="mt-2 text-cyan-300 font-extrabold">
-              📍 Instalaciones de la UNSM | 📅 1 de Diciembre | ⏰ 6:00 PM
+              📍 Instalaciones de la UNSM | 📅 1 de Diciembre | ⏰ 8:00 AM
             </p>
           </div>
 

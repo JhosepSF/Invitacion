@@ -241,7 +241,7 @@ export function PanelPrincipal() {
                   <Clock className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                   <div className="text-left text-xs leading-tight">
                     <span className="text-gray-400 block text-[10px]">Hora:</span>
-                    <strong className="text-cyan-300">6:00 PM</strong>
+                    <strong className="text-cyan-300">8:00 AM</strong>
                   </div>
                 </div>
               </div>
@@ -468,7 +468,7 @@ export function PanelPrincipal() {
               <div className="bg-[#15072e]/80 border-2 border-purple-500/40 rounded-2xl p-4 shadow-lg hover:border-purple-400 transition-all">
                 <Clock className="w-6 h-6 text-purple-400 mb-2" />
                 <span className="text-[10px] text-gray-400 uppercase font-bold block">HORA:</span>
-                <strong className="text-yellow-300 text-xl block font-funky">6:00 PM</strong>
+                <strong className="text-yellow-300 text-xl block font-funky">8:00 AM</strong>
                 <span className="text-xs text-purple-200">¡Ingreso Puntual!</span>
               </div>
             </div>
@@ -482,7 +482,7 @@ export function PanelPrincipal() {
 
               <div className="flex gap-2">
                 <a
-                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%C2%BFQui%C3%A9n+Controla+a+Qui%C3%A9n%3F+-+Festival+de+la+Desconexi%C3%B3n+UNSM&dates=20261201T230000Z/20261202T013000Z&details=%C2%A1No+es+una+charla+m%C3%A1s!+Ven+a+compartir+un+espacio+con+din%C3%A1micas%2C+juegos+y+sorpresas.+Organizado+por+Facultad+de+Medicina+Humana+y+Escuela+Profesional+de+Enfermer%C3%ADa.&location=Instalaciones+de+la+Universidad+Nacional+de+San+Mart%C3%ADn+(UNSM)"
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%C2%BFQui%C3%A9n+Controla+a+Qui%C3%A9n%3F+-+Festival+de+la+Desconexi%C3%B3n+UNSM&dates=20261201T130000Z/20261201T153000Z&details=%C2%A1No+es+una+charla+m%C3%A1s!+Ven+a+compartir+un+espacio+con+din%C3%A1micas%2C+juegos+y+sorpresas.+Organizado+por+Facultad+de+Medicina+Humana+y+Escuela+Profesional+de+Enfermer%C3%ADa.&location=Instalaciones+de+la+Universidad+Nacional+de+San+Mart%C3%ADn+(UNSM)"
                   target="_blank"
                   rel="noreferrer"
                   className="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all shadow-md flex items-center gap-1.5"
@@ -554,7 +554,7 @@ export function PanelPrincipal() {
                 </div>
                 <div className="bg-black/40 p-3 rounded-xl border border-white/10">
                   <span className="text-gray-400 block text-[10px]">HORA:</span>
-                  <strong className="text-cyan-300 text-sm">6:00 PM</strong>
+                  <strong className="text-cyan-300 text-sm">8:00 AM</strong>
                 </div>
               </div>
 
@@ -575,7 +575,7 @@ export function PanelPrincipal() {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `¡Hola! Te invito al Festival de la Desconexión de la UNSM "¿Quién controla a quién?". Será este 1 de Diciembre a las 6 PM en las instalaciones de la UNSM. ¡Ingreso 100% libre con dinámicas y premios!`
+                    `¡Hola! Te invito al Festival de la Desconexión de la UNSM "¿Quién controla a quién?". Será este 1 de Diciembre a las 8 AM en las instalaciones de la UNSM. ¡Ingreso 100% libre con dinámicas y premios!`
                   );
                   alert("¡Enlace e invitación copiados para compartir en WhatsApp!");
                 }}

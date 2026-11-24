@@ -33,7 +33,7 @@ export function RegistrationModal({ isOpen, onClose }) {
       code: ticketCode,
       seat: "Instalaciones de la UNSM",
       date: "1 de Diciembre, 2026",
-      time: "6:00 PM",
+      time: "8:00 AM",
       location: "Universidad Nacional de San Martín",
     };
 
@@ -139,7 +139,7 @@ export function RegistrationModal({ isOpen, onClose }) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="w-3.5 h-3.5 text-yellow-400" />
-                  <span><strong>Fecha:</strong> 1 de Diciembre | <strong>Hora:</strong> 6:00 PM</span>
+                  <span><strong>Fecha:</strong> 1 de Diciembre | <strong>Hora:</strong> 8:00 AM</span>
                 </div>
               </div>
 
@@ -200,7 +200,7 @@ export function RegistrationModal({ isOpen, onClose }) {
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-400 block">FECHA & HORA:</span>
-                  <span className="font-bold text-yellow-300">1 Dic • 6:00 PM</span>
+                  <span className="font-bold text-yellow-300">1 Dic • 8:00 AM</span>
                 </div>
               </div>
 
@@ -222,7 +222,7 @@ export function RegistrationModal({ isOpen, onClose }) {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `¡Ya confirmé mi asistencia al Festival de la Desconexión UNSM! Fecha: 1 de Diciembre, 6 PM en las Instalaciones de la UNSM. Pase: ${ticketGenerated.code}`
+                    `¡Ya confirmé mi asistencia al Festival de la Desconexión UNSM! Fecha: 1 de Diciembre, 8 AM en las Instalaciones de la UNSM. Pase: ${ticketGenerated.code}`
                   );
                   Swal.fire({
                     toast: true,

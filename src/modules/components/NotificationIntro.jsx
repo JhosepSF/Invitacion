@@ -5,7 +5,7 @@ import { MessageSquare, Bell, Sparkles, ChevronDown, Lock } from "lucide-react";
 export function NotificationIntro({ onOpenInvitation }) {
   const [hasStarted, setHasStarted] = useState(false);
   const [isDismissing, setIsDismissing] = useState(false);
-  const [currentTimeStr, setCurrentTimeStr] = useState("6:00");
+  const [currentTimeStr, setCurrentTimeStr] = useState("8:00");
 
   useEffect(() => {
     const now = new Date();
@@ -111,7 +111,7 @@ export function NotificationIntro({ onOpenInvitation }) {
           1 de Diciembre
         </span>
         <h1 className="text-6xl sm:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white via-purple-100 to-purple-300 font-funky tracking-tight">
-          06:00
+          08:00
         </h1>
         <p className="text-xs text-yellow-300/90 font-semibold tracking-wide">
           Facultad de Medicina Humana & Enfermería UNSM
@@ -159,7 +159,7 @@ export function NotificationIntro({ onOpenInvitation }) {
           {/* Location & Time preview pill */}
           <div className="bg-purple-950/10 border border-purple-500/20 rounded-xl px-3 py-2 text-xs flex items-center justify-between text-purple-950 font-bold mb-3">
             <span>📍 Instalaciones de la UNSM</span>
-            <span>⏰ 6:00 PM</span>
+            <span>⏰ 8:00 AM</span>
           </div>
 
           {/* Interactive Call to Action Bar */}

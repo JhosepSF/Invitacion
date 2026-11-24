@@ -10,8 +10,8 @@ export function CountdownTimer() {
   });
 
   useEffect(() => {
-    // Target: December 1, 2026, 18:00:00 (Local Time)
-    const targetDate = new Date(2026, 11, 1, 18, 0, 0).getTime();
+    // Target: December 1, 2026, 08:00:00 (Local Time)
+    const targetDate = new Date(2026, 11, 1, 8, 0, 0).getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -54,7 +54,7 @@ export function CountdownTimer() {
           <span>Cuenta Regresiva Oficial</span>
         </div>
         <span className="text-[11px] text-pink-400 bg-pink-950/60 px-2 py-0.5 rounded-full border border-pink-500/30 font-medium">
-          30 Nov • 6:00 PM
+          1 Dic • 8:00 AM
         </span>
       </div>
 

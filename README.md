@@ -10,8 +10,8 @@ Presentación interactiva y animada para la invitación al **Festival de la Desc
 ## 📍 Datos del Evento
 - **Punto de Encuentro:** Universidad Nacional de San Martín (UNSM)
 - **Aula:** A6
-- **Fecha:** 30 de Noviembre
-- **Hora:** 6:00 PM
+- **Fecha:** 1 de Diciembre
+- **Hora:** 8:00 AM
 - **Entrada:** ¡INGRESO 100% LIBRE!
 
 ---
@@ -22,7 +22,7 @@ Presentación interactiva y animada para la invitación al **Festival de la Desc
    - **Slide 1 - Portada & Flyer Vivo:** Título con tipografía neón y acceso a coordenadas directas.
    - **Slide 2 - Consecuencias del Uso del Celular:** Enfoque de salud mental y médica (nomofobia, sobrecarga dopaminérgica, alteraciones del sueño y pérdida de conexión real) + Test interactivo.
    - **Slide 3 - Dinámicas, Juegos & Sorpresas:** Ruleta interactiva de actividades sin pantallas, premios y risoterapia.
-   - **Slide 4 - Coordenadas & Cuenta Regresiva:** Reloj regresivo en tiempo real al 30 de Noviembre 6:00 PM y botón directo para agendar en Google Calendar.
+   - **Slide 4 - Coordenadas & Cuenta Regresiva:** Reloj regresivo en tiempo real al 1 de Diciembre 8:00 AM y botón directo para agendar en Google Calendar.
    - **Slide 5 - Registro & Pase Digital VIP:** Generador de credencial con código QR personalizado para el Aula A6.
 3. **Música & Efectos de Sonido Web Audio:** Sintetizador festivalero electrónico en tiempo real y sonido ping de notificación.
 4. **Fondo Cósmico & Ondas de Neón:** Canvas reactivo con notas musicales, partículas flotantes y curvas lumínicas.
