@@ -17,7 +17,7 @@ export function NotificationIntro({ onOpenInvitation }) {
     if (navigator.vibrate) {
       try {
         navigator.vibrate([80, 50, 100]);
-      } catch (e) {}
+      } catch (e) { }
     }
   }, []);
 
@@ -65,7 +65,7 @@ export function NotificationIntro({ onOpenInvitation }) {
     if (navigator.vibrate) {
       try {
         navigator.vibrate([120, 80, 180]);
-      } catch (e) {}
+      } catch (e) { }
     }
   };
 
@@ -89,9 +89,8 @@ export function NotificationIntro({ onOpenInvitation }) {
   return (
     <div
       onClick={handleOpen}
-      className={`fixed inset-0 z-50 flex flex-col items-center justify-between p-4 sm:p-6 bg-gradient-to-b from-[#120426] via-[#090214] to-black transition-all duration-500 cursor-pointer select-none ${
-        isDismissing ? "opacity-0 scale-105 pointer-events-none" : "opacity-100 scale-100"
-      }`}
+      className={`fixed inset-0 z-50 flex flex-col items-center justify-between p-4 sm:p-6 bg-gradient-to-b from-[#120426] via-[#090214] to-black transition-all duration-500 cursor-pointer select-none ${isDismissing ? "opacity-0 scale-105 pointer-events-none" : "opacity-100 scale-100"
+        }`}
     >
       {/* Top Phone Status Bar */}
       <div className="w-full max-w-md flex items-center justify-between text-purple-200/80 text-xs px-2 pt-2">
@@ -109,7 +108,7 @@ export function NotificationIntro({ onOpenInvitation }) {
       {/* Center Phone Lockscreen Clock */}
       <div className="text-center my-auto space-y-2">
         <span className="text-xs uppercase tracking-widest text-purple-300/80 font-bold">
-          Sábado, 30 de Noviembre
+          1 de Diciembre
         </span>
         <h1 className="text-6xl sm:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white via-purple-100 to-purple-300 font-funky tracking-tight">
           06:00
@@ -159,7 +158,7 @@ export function NotificationIntro({ onOpenInvitation }) {
 
           {/* Location & Time preview pill */}
           <div className="bg-purple-950/10 border border-purple-500/20 rounded-xl px-3 py-2 text-xs flex items-center justify-between text-purple-950 font-bold mb-3">
-            <span>📍 Aula A6 • UNSM</span>
+            <span>📍 Instalaciones de la UNSM</span>
             <span>⏰ 6:00 PM</span>
           </div>
 

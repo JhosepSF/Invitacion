@@ -93,11 +93,10 @@ export function InteractiveTest({ onConfirmClick }) {
                       key={idx}
                       type="button"
                       onClick={() => handleSelect(item.id, opt.points)}
-                      className={`text-left text-xs p-2.5 rounded-xl border transition-all flex items-start gap-2 ${
-                        isSelected
-                          ? "bg-yellow-400 text-slate-950 font-bold border-yellow-300 shadow-md"
-                          : "bg-purple-950/40 text-purple-200 border-purple-500/30 hover:border-purple-400 hover:bg-purple-900/40"
-                      }`}
+                      className={`text-left text-xs p-2.5 rounded-xl border transition-all flex items-start gap-2 ${isSelected
+                        ? "bg-yellow-400 text-slate-950 font-bold border-yellow-300 shadow-md"
+                        : "bg-purple-950/40 text-purple-200 border-purple-500/30 hover:border-purple-400 hover:bg-purple-900/40"
+                        }`}
                     >
                       <span className="mt-0.5">•</span>
                       <span>{opt.text}</span>
@@ -111,11 +110,10 @@ export function InteractiveTest({ onConfirmClick }) {
           <button
             disabled={!isComplete}
             onClick={calculateResult}
-            className={`w-full py-3 rounded-2xl font-black text-sm uppercase tracking-wider transition-all ${
-              isComplete
-                ? "bg-gradient-to-r from-yellow-400 to-amber-400 text-slate-950 shadow-[0_0_20px_rgba(255,238,0,0.5)] hover:scale-[1.02] cursor-pointer"
-                : "bg-gray-800 text-gray-500 cursor-not-allowed border border-gray-700"
-            }`}
+            className={`w-full py-3 rounded-2xl font-black text-sm uppercase tracking-wider transition-all ${isComplete
+              ? "bg-gradient-to-r from-yellow-400 to-amber-400 text-slate-950 shadow-[0_0_20px_rgba(255,238,0,0.5)] hover:scale-[1.02] cursor-pointer"
+              : "bg-gray-800 text-gray-500 cursor-not-allowed border border-gray-700"
+              }`}
           >
             {isComplete ? "Ver Mi Diagnóstico ➔" : "Responde las 3 preguntas para ver tu resultado"}
           </button>
@@ -145,7 +143,7 @@ export function InteractiveTest({ onConfirmClick }) {
               Ven a compartir dinámicas vivenciales, juegos sin celulares y sorpresas organizadas por la UNSM.
             </p>
             <p className="mt-2 text-cyan-300 font-extrabold">
-              📍 UNSM - Aula A6 | 📅 30 de Noviembre | ⏰ 6:00 PM
+              📍 Instalaciones de la UNSM | 📅 1 de Diciembre | ⏰ 6:00 PM
             </p>
           </div>
 

@@ -47,9 +47,8 @@ export function InteractiveFlyerPhone({ onOpenRegister, onShowFlyer }) {
       {/* Smartphone Body */}
       <div
         onClick={handlePhoneClick}
-        className={`relative w-full rounded-[42px] p-3 sm:p-3.5 bg-gradient-to-b from-[#220738] via-[#120324] to-[#0a0117] border-[3.5px] border-pink-500/80 phone-border-anim shadow-[0_0_40px_rgba(247,37,133,0.5)] cursor-pointer transition-transform duration-300 hover:scale-[1.01] ${
-          isVibrating ? "animate-[wiggle_0.2s_ease-in-out_infinite]" : ""
-        }`}
+        className={`relative w-full rounded-[42px] p-3 sm:p-3.5 bg-gradient-to-b from-[#220738] via-[#120324] to-[#0a0117] border-[3.5px] border-pink-500/80 phone-border-anim shadow-[0_0_40px_rgba(247,37,133,0.5)] cursor-pointer transition-transform duration-300 hover:scale-[1.01] ${isVibrating ? "animate-[wiggle_0.2s_ease-in-out_infinite]" : ""
+          }`}
       >
         {/* Phone Speaker Notch / Dynamic Island */}
         <div className="absolute top-4 left-1/2 -translate-x-1/2 w-28 h-4 bg-black rounded-full z-20 flex items-center justify-center gap-2 border border-white/10 shadow-sm">
@@ -112,11 +111,11 @@ export function InteractiveFlyerPhone({ onOpenRegister, onShowFlyer }) {
           <div className="mt-3 bg-purple-950/70 border border-purple-500/30 rounded-xl p-2.5 text-left text-[11px] text-purple-200 space-y-1">
             <div className="flex items-center justify-between">
               <span className="text-gray-400">Punto de encuentro:</span>
-              <span className="font-bold text-yellow-300">UNSM - Aula A6</span>
+              <span className="font-bold text-yellow-300">Instalaciones de la UNSM</span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-gray-400">Fecha & Hora:</span>
-              <span className="font-bold text-cyan-300">30 Nov • 6:00 PM</span>
+              <span className="font-bold text-cyan-300">1 Dic • 6:00 PM</span>
             </div>
           </div>
 
@@ -124,11 +123,10 @@ export function InteractiveFlyerPhone({ onOpenRegister, onShowFlyer }) {
           <div className="mt-3 flex items-center justify-between px-1">
             <button
               onClick={handleLike}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${
-                hasLiked
-                  ? "bg-pink-600 text-white shadow-[0_0_12px_rgba(247,37,133,0.6)]"
-                  : "bg-white/10 hover:bg-white/20 text-pink-300"
-              }`}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all ${hasLiked
+                ? "bg-pink-600 text-white shadow-[0_0_12px_rgba(247,37,133,0.6)]"
+                : "bg-white/10 hover:bg-white/20 text-pink-300"
+                }`}
             >
               <Heart className={`w-3.5 h-3.5 ${hasLiked ? "fill-white" : ""}`} />
               <span>{likes}</span>

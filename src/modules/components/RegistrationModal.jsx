@@ -31,8 +31,8 @@ export function RegistrationModal({ isOpen, onClose }) {
     const newTicket = {
       ...formData,
       code: ticketCode,
-      seat: "Aula A6",
-      date: "30 de Noviembre, 2026",
+      seat: "Instalaciones de la UNSM",
+      date: "1 de Diciembre, 2026",
       time: "6:00 PM",
       location: "Universidad Nacional de San Martín",
     };
@@ -135,11 +135,11 @@ export function RegistrationModal({ isOpen, onClose }) {
               <div className="bg-black/40 border border-purple-500/20 rounded-xl p-3 text-xs space-y-1.5 text-purple-200/90">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-3.5 h-3.5 text-pink-400" />
-                  <span><strong>Lugar:</strong> UNSM - Aula A6</span>
+                  <span><strong>Lugar:</strong> Instalaciones de la UNSM</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar className="w-3.5 h-3.5 text-yellow-400" />
-                  <span><strong>Fecha:</strong> 30 de Noviembre | <strong>Hora:</strong> 6:00 PM</span>
+                  <span><strong>Fecha:</strong> 1 de Diciembre | <strong>Hora:</strong> 6:00 PM</span>
                 </div>
               </div>
 
@@ -195,12 +195,12 @@ export function RegistrationModal({ isOpen, onClose }) {
                   <span className="font-mono font-bold text-cyan-300">{ticketGenerated.phone || "Confirmado"}</span>
                 </div>
                 <div>
-                  <span className="text-[10px] text-gray-400 block">LUGAR & AULA:</span>
-                  <span className="font-bold text-yellow-300">UNSM - Aula A6</span>
+                  <span className="text-[10px] text-gray-400 block">LUGAR:</span>
+                  <span className="font-bold text-yellow-300">Instalaciones UNSM</span>
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-400 block">FECHA & HORA:</span>
-                  <span className="font-bold text-yellow-300">30 Nov • 6:00 PM</span>
+                  <span className="font-bold text-yellow-300">1 Dic • 6:00 PM</span>
                 </div>
               </div>
 
@@ -222,7 +222,7 @@ export function RegistrationModal({ isOpen, onClose }) {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `¡Ya confirmé mi asistencia al Festival de la Desconexión UNSM! Fecha: 30 de Noviembre, 6 PM en Aula A6. Pase: ${ticketGenerated.code}`
+                    `¡Ya confirmé mi asistencia al Festival de la Desconexión UNSM! Fecha: 1 de Diciembre, 6 PM en las Instalaciones de la UNSM. Pase: ${ticketGenerated.code}`
                   );
                   Swal.fire({
                     toast: true,

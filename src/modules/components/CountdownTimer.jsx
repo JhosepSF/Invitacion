@@ -10,8 +10,8 @@ export function CountdownTimer() {
   });
 
   useEffect(() => {
-    // Target: November 30, 2026, 18:00:00 (Local Time)
-    const targetDate = new Date(2026, 10, 30, 18, 0, 0).getTime();
+    // Target: December 1, 2026, 18:00:00 (Local Time)
+    const targetDate = new Date(2026, 11, 1, 18, 0, 0).getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();

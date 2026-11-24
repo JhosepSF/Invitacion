@@ -225,7 +225,7 @@ export function PanelPrincipal() {
                   <MapPin className="w-5 h-5 text-pink-400 flex-shrink-0" />
                   <div className="text-left text-xs leading-tight">
                     <span className="text-gray-400 block text-[10px]">Punto de encuentro:</span>
-                    <strong className="text-yellow-300">UNSM - Aula A6</strong>
+                    <strong className="text-yellow-300">Instalaciones de la UNSM</strong>
                   </div>
                 </div>
 
@@ -233,7 +233,7 @@ export function PanelPrincipal() {
                   <Calendar className="w-5 h-5 text-yellow-400 flex-shrink-0" />
                   <div className="text-left text-xs leading-tight">
                     <span className="text-gray-400 block text-[10px]">Fecha:</span>
-                    <strong className="text-white">30 de Noviembre</strong>
+                    <strong className="text-white">1 de Diciembre</strong>
                   </div>
                 </div>
 
@@ -451,17 +451,17 @@ export function PanelPrincipal() {
 
               <div className="bg-[#15072e]/80 border-2 border-yellow-500/40 rounded-2xl p-4 shadow-lg hover:border-yellow-400 transition-all">
                 <div className="w-6 h-6 rounded-lg bg-yellow-400/20 text-yellow-300 flex items-center justify-center font-bold text-xs mb-2">
-                  🚪
+                  🏛️
                 </div>
-                <span className="text-[10px] text-gray-400 uppercase font-bold block">AULA ASIGNADA:</span>
-                <strong className="text-yellow-300 text-xl block font-funky">AULA : A6</strong>
-                <span className="text-xs text-purple-200">Pabellón Principal</span>
+                <span className="text-[10px] text-gray-400 uppercase font-bold block">UBICACIÓN:</span>
+                <strong className="text-yellow-300 text-xl block font-funky">Instalaciones UNSM</strong>
+                <span className="text-xs text-purple-200">Campus Universitario</span>
               </div>
 
               <div className="bg-[#15072e]/80 border-2 border-cyan-500/40 rounded-2xl p-4 shadow-lg hover:border-cyan-400 transition-all">
                 <Calendar className="w-6 h-6 text-cyan-400 mb-2" />
                 <span className="text-[10px] text-gray-400 uppercase font-bold block">FECHA:</span>
-                <strong className="text-white text-base block font-funky">30 de Noviembre</strong>
+                <strong className="text-white text-base block font-funky">1 de Diciembre</strong>
                 <span className="text-xs text-cyan-300">Semestre 2026 - II</span>
               </div>
 
@@ -482,7 +482,7 @@ export function PanelPrincipal() {
 
               <div className="flex gap-2">
                 <a
-                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%C2%BFQui%C3%A9n+Controla+a+Qui%C3%A9n%3F+-+Festival+de+la+Desconexi%C3%B3n+UNSM&dates=20261130T230000Z/20261201T013000Z&details=%C2%A1No+es+una+charla+m%C3%A1s!+Ven+a+compartir+un+espacio+con+din%C3%A1micas%2C+juegos+y+sorpresas.+Organizado+por+Facultad+de+Medicina+Humana+y+Escuela+Profesional+de+Enfermer%C3%ADa.&location=Universidad+Nacional+de+San+Mart%C3%ADn%2C+Aula+A6"
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%C2%BFQui%C3%A9n+Controla+a+Qui%C3%A9n%3F+-+Festival+de+la+Desconexi%C3%B3n+UNSM&dates=20261201T230000Z/20261202T013000Z&details=%C2%A1No+es+una+charla+m%C3%A1s!+Ven+a+compartir+un+espacio+con+din%C3%A1micas%2C+juegos+y+sorpresas.+Organizado+por+Facultad+de+Medicina+Humana+y+Escuela+Profesional+de+Enfermer%C3%ADa.&location=Instalaciones+de+la+Universidad+Nacional+de+San+Mart%C3%ADn+(UNSM)"
                   target="_blank"
                   rel="noreferrer"
                   className="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all shadow-md flex items-center gap-1.5"
@@ -513,7 +513,7 @@ export function PanelPrincipal() {
                 Asegura Tu Cupo (Ingreso Libre)
               </h2>
               <p className="text-sm sm:text-base text-purple-200/90 max-w-lg mx-auto">
-                El aforo del Aula A6 es limitado. Regístrate ahora para obtener tu Pase Digital de acceso al Festival de la Desconexión.
+                El aforo es limitado. Regístrate ahora para obtener tu Pase Digital de acceso al Festival de la Desconexión en las instalaciones de la UNSM.
               </p>
             </div>
 
@@ -546,11 +546,11 @@ export function PanelPrincipal() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
                 <div className="bg-black/40 p-3 rounded-xl border border-white/10">
                   <span className="text-gray-400 block text-[10px]">PUNTO DE ENCUENTRO:</span>
-                  <strong className="text-white text-sm">UNSM - Aula A6</strong>
+                  <strong className="text-white text-sm">Instalaciones de la UNSM</strong>
                 </div>
                 <div className="bg-black/40 p-3 rounded-xl border border-white/10">
                   <span className="text-gray-400 block text-[10px]">FECHA:</span>
-                  <strong className="text-yellow-300 text-sm">30 de Noviembre</strong>
+                  <strong className="text-yellow-300 text-sm">1 de Diciembre</strong>
                 </div>
                 <div className="bg-black/40 p-3 rounded-xl border border-white/10">
                   <span className="text-gray-400 block text-[10px]">HORA:</span>
@@ -575,7 +575,7 @@ export function PanelPrincipal() {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `¡Hola! Te invito al Festival de la Desconexión de la UNSM "¿Quién controla a quién?". Será este 30 de Noviembre a las 6 PM en el Aula A6. ¡Ingreso 100% libre con dinámicas y premios!`
+                    `¡Hola! Te invito al Festival de la Desconexión de la UNSM "¿Quién controla a quién?". Será este 1 de Diciembre a las 6 PM en las instalaciones de la UNSM. ¡Ingreso 100% libre con dinámicas y premios!`
                   );
                   alert("¡Enlace e invitación copiados para compartir en WhatsApp!");
                 }}
