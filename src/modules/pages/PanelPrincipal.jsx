@@ -193,13 +193,13 @@ export function PanelPrincipal() {
               </div>
 
               {/* Main Headline */}
-              <div className="space-y-2">
-                <h2 className="text-4xl sm:text-6xl xl:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 via-yellow-400 to-amber-500 font-funky tracking-tight text-glow-yellow leading-none">
-                  ¿QUIÉN CONTROLA A QUIÉN?
-                </h2>
-                <p className="text-lg sm:text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-400 font-funky">
-                  El Festival de la Desconexión: Consecuencias del uso del celular
+              <div className="space-y-2 sm:space-y-3">
+                <p className="text-lg sm:text-2xl xl:text-3xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-fuchsia-300 to-cyan-300 font-funky drop-shadow-[0_0_12px_rgba(247,37,133,0.4)]">
+                  Desconectados del mundo real
                 </p>
+                <h2 className="text-3xl sm:text-5xl xl:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 via-yellow-400 to-amber-500 font-funky tracking-tight text-glow-yellow leading-tight">
+                  El verdadero costo emocional de vivir a través del celular
+                </h2>
               </div>
 
               {/* Notification Bubble Highlight */}
@@ -482,7 +482,7 @@ export function PanelPrincipal() {
 
               <div className="flex gap-2">
                 <a
-                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%C2%BFQui%C3%A9n+Controla+a+Qui%C3%A9n%3F+-+Festival+de+la+Desconexi%C3%B3n+UNSM&dates=20261201T130000Z/20261201T153000Z&details=%C2%A1No+es+una+charla+m%C3%A1s!+Ven+a+compartir+un+espacio+con+din%C3%A1micas%2C+juegos+y+sorpresas.+Organizado+por+Facultad+de+Medicina+Humana+y+Escuela+Profesional+de+Enfermer%C3%ADa.&location=Instalaciones+de+la+Universidad+Nacional+de+San+Mart%C3%ADn+(UNSM)"
+                  href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Desconectados+del+mundo+real+-+El+verdadero+costo+emocional+de+vivir+a+trav%C3%A9s+del+celular&dates=20261201T130000Z/20261201T153000Z&details=%C2%A1No+es+una+charla+m%C3%A1s!+Ven+a+compartir+un+espacio+con+din%C3%A1micas%2C+juegos+y+sorpresas.+Organizado+por+Facultad+de+Medicina+Humana+y+Escuela+Profesional+de+Enfermer%C3%ADa.&location=Instalaciones+de+la+Universidad+Nacional+de+San+Mart%C3%ADn+(UNSM)"
                   target="_blank"
                   rel="noreferrer"
                   className="px-4 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all shadow-md flex items-center gap-1.5"
@@ -532,10 +532,10 @@ export function PanelPrincipal() {
                     </span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-black text-white font-funky">
-                    ¿Quién Controla a Quién?
+                    Desconectados del mundo real
                   </h3>
                   <p className="text-xs text-pink-300 font-semibold">
-                    El Festival de la Desconexión • Medicina & Enfermería
+                    El verdadero costo emocional de vivir a través del celular
                   </p>
                 </div>
                 <div className="px-3 py-1 rounded-full bg-yellow-400 text-slate-950 font-black text-xs uppercase tracking-wide shadow-md">
@@ -575,7 +575,7 @@ export function PanelPrincipal() {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `¡Hola! Te invito al Festival de la Desconexión de la UNSM "¿Quién controla a quién?". Será este 1 de Diciembre a las 8 AM en las instalaciones de la UNSM. ¡Ingreso 100% libre con dinámicas y premios!`
+                    `¡Hola! Te invito a la presentación de la UNSM "Desconectados del mundo real: El verdadero costo emocional de vivir a través del celular". Será este 1 de Diciembre a las 8 AM en las instalaciones de la UNSM. ¡Ingreso 100% libre con dinámicas y premios!`
                   );
                   alert("¡Enlace e invitación copiados para compartir en WhatsApp!");
                 }}

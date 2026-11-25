@@ -66,7 +66,7 @@ export function InteractiveTest({ onConfirmClick }) {
             <Sparkles className="w-3.5 h-3.5" /> Dinámica Interactiva
           </span>
           <h3 className="text-xl sm:text-2xl font-black text-white font-funky">
-            Test: ¿Quién controla a quién?
+            Test: Desconectados del mundo real
           </h3>
         </div>
         {showResult && (

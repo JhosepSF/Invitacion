@@ -1,4 +1,5 @@
-# ¿Quién Controla a Quién? - El Festival de la Desconexión 📱⚡
+# Desconectados del mundo real 📱⚡
+### El verdadero costo emocional de vivir a través del celular
 ### Universidad Nacional de San Martín (UNSM)
 **Facultad de Medicina Humana • Escuela Profesional de Enfermería**
 *Semestre 2026 - II*

@@ -72,7 +72,7 @@ export function RegistrationModal({ isOpen, onClose }) {
                 Confirmar Asistencia
               </h2>
               <p className="text-sm text-purple-200/80 mt-1">
-                El Festival de la Desconexión: ¿Quién controla a quién?
+                Desconectados del mundo real: El verdadero costo emocional de vivir a través del celular
               </p>
             </div>
 
@@ -178,10 +178,10 @@ export function RegistrationModal({ isOpen, onClose }) {
                   </span>
                 </div>
                 <h3 className="text-lg font-black text-white font-funky leading-tight">
-                  Festival de la Desconexión
+                  Desconectados del mundo real
                 </h3>
                 <p className="text-xs text-pink-300 font-semibold">
-                  "¿Quién Controla a Quién?"
+                  El verdadero costo emocional de vivir a través del celular
                 </p>
               </div>
 
@@ -222,7 +222,7 @@ export function RegistrationModal({ isOpen, onClose }) {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `¡Ya confirmé mi asistencia al Festival de la Desconexión UNSM! Fecha: 1 de Diciembre, 8 AM en las Instalaciones de la UNSM. Pase: ${ticketGenerated.code}`
+                    `¡Ya confirmé mi asistencia! "Desconectados del mundo real: El verdadero costo emocional de vivir a través del celular" - UNSM. Fecha: 1 de Diciembre, 8 AM en las Instalaciones de la UNSM. Pase: ${ticketGenerated.code}`
                   );
                   Swal.fire({
                     toast: true,
